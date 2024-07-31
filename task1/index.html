@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>reg form</title>
+</head>
+<body>
+    
+    <h2>Sign up</h2>
+  <form>
+    <tr>
+        <td>First name:</td><td><input type="text" placeholder="Enter your first name"></td>
+    </tr>
+    <tr>
+        <td>Last name:</td> <td><input type="text" placeholder="Enter your last name"></td>
+    </tr><br>
+    <br>
+    <tr>
+        <td>Email:</td><br><td><input type="text" placeholder ="Enter your Email"></td>
+        <p style="color: grey;">We'll never share your email with anyone else.</p>
+    </tr>
+    <tr>
+        
+    <td><input type="radio" name="Gender">male</td>
+    <td ><input type="radio" name="Gender">Female</td>
+</tr><br>
+
+    <tr><br>
+        <td>City:</td> <td><input type="text" placeholder="Enter your City"></td>
+    </tr>
+
+    <tr>
+        <td>Country:</td>
+        <td>
+            <select>
+                <option>United States</option>
+                <option>India</option>
+            </select>
+        </td>
+    </tr>
+    <br>
+    <br>
+    <tr>
+        <td>Create password:</td><td><input type="text"></td>
+    </tr><br>
+    <br>
+
+    <tr>
+        <td>Reset password:</td> <td><input type="text"></td>
+    </tr><br>
+    <br>
+
+     <button style="color: blue;">Register</button>
+     <br>
+<br>
+     <tr>
+        <td>
+            <input type="checkbox">i am agree with  <a href="terms and condition">terms and conditions</a>
+        </td>
+     </tr>
+
+  </form>
+   <centre>
+    <p>Have an Account? <a href="#">Log in</a></p>
+   </centre>
+
+    
+</body>
+</html>
