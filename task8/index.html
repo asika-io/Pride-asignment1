@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Online Application Form</h2>
+        <form id="applicationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required pattern="[0-9]{10}">
+            <span class="error" id="phoneError"></span>
+
+            <label for="department">Department:</label>
+            <select id="department" required>
+                <option value="">Select a department</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Business</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts">Arts</option>
+            </select>
+            <span class="error" id="departmentError"></span>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
