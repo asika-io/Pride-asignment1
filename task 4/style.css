@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.user-actions a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.nav-menu li {
+    padding: 10px 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    background: linear-gradient(45deg, #f06, #00f);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.features .feature-item {
+    max-width: 300px;
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    text-align: center;
+    margin: 15px;
+    max-width: 200px;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+
+    .product-item img {
+        width: 80%;
+    }
+
+    .banner h1 {
+        font-size: 1.8em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .product-grid {
+        justify-content: center;
+    }
+}
